@@ -8,6 +8,7 @@ from India import districtwise,clean_states,data01to14,multi_crime_plot,plot_map
 from predictions import children_prediction,children_crimes,children_states,children_years,pred_crime_plot,women_prediction,women_crimes,women_states,women_years
 
 app=Flask(__name__) #instantiate a flask application
+server=app.server
 #you’ll set up a database file path, instantiate your Flask application, and configure and connect your application with SQLAlchemy. 
 app.config['SQLALCHEMY_DATABASE_URI']='sqlite:///data.db' #SQLALCHEMY_DATABASE_URI: The database URI to specify the database you want to establish a connection with.
 db=SQLAlchemy(app) # connect database to flask application
